@@ -1,0 +1,26 @@
+{
+    "sourceFile": "metro.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1742295621178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742296671709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n const { getDefaultConfig } = require(\"expo/metro-config\");\n const { withNativeWind } = require('nativewind/metro');\n \n-const config = getDefaultConfig(__dirname, { isCSSEnabled: true })\n+const config = getDefaultConfig(__dirname)\n \n module.exports = withNativeWind(config, { input: './global.css' })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742296678811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,5 @@\n const { withNativeWind } = require('nativewind/metro');\n \n const config = getDefaultConfig(__dirname)\n \n-module.exports = withNativeWind(config, { input: './global.css' })\n\\ No newline at end of file\n+module.exports = withNativeWind(config, { input: './app/globals.css' })\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1742295621178,
+            "name": "Commit-0",
+            "content": "const { getDefaultConfig } = require(\"expo/metro-config\");\nconst { withNativeWind } = require('nativewind/metro');\n\nconst config = getDefaultConfig(__dirname, { isCSSEnabled: true })\n\nmodule.exports = withNativeWind(config, { input: './global.css' })"
+        }
+    ]
+}

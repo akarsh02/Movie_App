@@ -1,0 +1,30 @@
+{
+    "sourceFile": "babel.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1742295287951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742296444473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,13 +2,14 @@\n     api.cache(true);\n     return {\n         presets: [\n             [\"babel-preset-expo\", { jsxImportSource: \"nativewind\" }],\n-            \"nativewind/babel\",\n+\n         ],\n         plugins: [\n             // Required for expo-router\n             \"expo-router/babel\",\n             \"react-native-reanimated/plugin\",\n+            \"nativewind/babel\",\n         ]\n     };\n };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742296471406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,14 +2,13 @@\n     api.cache(true);\n     return {\n         presets: [\n             [\"babel-preset-expo\", { jsxImportSource: \"nativewind\" }],\n-\n+            \"nativewind/babel\",\n         ],\n         plugins: [\n             // Required for expo-router\n             \"expo-router/babel\",\n             \"react-native-reanimated/plugin\",\n-            \"nativewind/babel\",\n         ]\n     };\n };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742296643177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,6 @@\n         presets: [\n             [\"babel-preset-expo\", { jsxImportSource: \"nativewind\" }],\n             \"nativewind/babel\",\n         ],\n-        plugins: [\n-            // Required for expo-router\n-            \"expo-router/babel\",\n-            \"react-native-reanimated/plugin\",\n-        ]\n     };\n };\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1742295287951,
+            "name": "Commit-0",
+            "content": "module.exports = function(api) {\n    api.cache(true);\n    return {\n        presets: [\n            [\"babel-preset-expo\", { jsxImportSource: \"nativewind\" }],\n            \"nativewind/babel\",\n        ],\n        plugins: [\n            // Required for expo-router\n            \"expo-router/babel\",\n            \"react-native-reanimated/plugin\",\n        ]\n    };\n};"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "tailwind.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1742295142086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1742295142086,
+            "name": "Commit-0",
+            "content": "/** @type {import('tailwindcss').Config} */\nmodule.exports = {\n    // NOTE: Update this to include the paths to all of your component files.\n    content: [\"./app/**/*.{js,jsx,ts,tsx}\"],\n    presets: [require(\"nativewind/preset\")],\n    theme: {\n        extend: {},\n    },\n    plugins: [],\n}"
+        }
+    ]
+}

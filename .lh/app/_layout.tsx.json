@@ -1,0 +1,30 @@
+{
+    "sourceFile": "app/_layout.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1742295467844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742296381106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Stack } from \"expo-router\";\n-import './global.css'\n \n+\n export default function RootLayout() {\n   return <Stack />;\n }\n"
+                },
+                {
+                    "date": 1742296547353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Stack } from \"expo-router\";\n+import './global.css'\n \n-\n export default function RootLayout() {\n   return <Stack />;\n }\n"
+                },
+                {
+                    "date": 1742296687249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Stack } from \"expo-router\";\n-import './global.css'\n+import './globals.css'\n \n export default function RootLayout() {\n   return <Stack />;\n }\n"
+                }
+            ],
+            "date": 1742295467844,
+            "name": "Commit-0",
+            "content": "import { Stack } from \"expo-router\";\nimport './global.css'\n\nexport default function RootLayout() {\n  return <Stack />;\n}\n"
+        }
+    ]
+}
