@@ -1,0 +1,18 @@
+{
+    "sourceFile": "app/(tabs)/profile.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1742303627134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1742303627134,
+            "name": "Commit-0",
+            "content": "import { View, Text } from 'react-native'\nimport React from 'react'\n\nconst ProfileScreen = () => {\n  return (\n    <View>\n      <Text>ProfileScreen</Text>\n    </View>\n  )\n}\n\nexport default ProfileScreen"
+        }
+    ]
+}

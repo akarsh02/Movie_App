@@ -3,11 +3,23 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1742295142086,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742300960194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+/** @type {import('tailwindcss').Config} */\n+module.exports = {\n+    // NOTE: Update this to include the paths to all of your component files.\n+    content: [\"./app/**/*.{js,jsx,ts,tsx}\"],\n+    presets: [require(\"nativewind/preset\")],\n+    theme: {\n+        extend: {\n+            colors: {\n+                primary: \"#123123\"\n+            }\n+        },\n+    },\n+    plugins: [],\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742301255059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,20 @@\n     presets: [require(\"nativewind/preset\")],\n     theme: {\n         extend: {\n             colors: {\n-                primary: \"#123123\"\n+                primary: \"#123123\",\n+                secondary: \"#151312\",\n+                accent: \"#AB8BFF\",\n+                light: {\n+                    100: \"#D6C6FF\",\n+                    200: \"#A8B5DB\",\n+                    300: '#9CA$AB'\n+                },\n+                dark: {\n+                    100: \"#221F3D\",\n+                    200: \"#0f0d23\"\n+                }\n             }\n         },\n     },\n     plugins: [],\n"
+                },
+                {
+                    "date": 1742301261782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,15 +21,5 @@\n             }\n         },\n     },\n     plugins: [],\n-}\n-/** @type {import('tailwindcss').Config} */\n-module.exports = {\n-    // NOTE: Update this to include the paths to all of your component files.\n-    content: [\"./app/**/*.{js,jsx,ts,tsx}\"],\n-    presets: [require(\"nativewind/preset\")],\n-    theme: {\n-        extend: {},\n-    },\n-    plugins: [],\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1742295142086,

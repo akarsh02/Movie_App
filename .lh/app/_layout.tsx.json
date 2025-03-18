@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1742295467844,
@@ -20,6 +20,10 @@
                 {
                     "date": 1742296687249,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Stack } from \"expo-router\";\n-import './global.css'\n+import './globals.css'\n \n export default function RootLayout() {\n   return <Stack />;\n }\n"
+                },
+                {
+                    "date": 1742303762621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,11 @@\n import { Stack } from \"expo-router\";\n import './globals.css'\n \n export default function RootLayout() {\n-  return <Stack />;\n+  return <Stack >\n+    <Stack.Screen name=\"(tabs)\" options={{headerShown:false}}/>\n+    <Stack.Screen name=\"movies/[id]\" options={{headerShown:false}}/>\n+\n+\n+  </Stack>;\n }\n"
                 }
             ],
             "date": 1742295467844,

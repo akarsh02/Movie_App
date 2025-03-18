@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1742294910753,
@@ -24,6 +24,26 @@
                 {
                     "date": 1742300449758,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n import { Text, View } from \"react-native\";\n \n export default function Index() {\n   return (\n-    <View className=\"bg-black\"\n+    <View className=\"bg-black flex-1 justify-center items-center\"\n       // style={{\n       //   flex: 1,\n       //   justifyContent: \"center\",\n       //   alignItems: \"center\",\n       // }}\n     >\n-<Text className=\" text-red-500 flex-1 justify-center items-center\">Welcome</Text>\n+<Text className=\" text-red-500 \">Welcome</Text>\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1742300975563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n       //   justifyContent: \"center\",\n       //   alignItems: \"center\",\n       // }}\n     >\n-<Text className=\" text-red-500 \">Welcome</Text>\n+<Text className=\" text-primary\">Welcome</Text>\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1742302699985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import { Link } from \"expo-router\";\n import { Text, View } from \"react-native\";\n \n export default function Index() {\n   return (\n@@ -9,7 +10,8 @@\n       //   alignItems: \"center\",\n       // }}\n     >\n <Text className=\" text-primary\">Welcome</Text>\n+<Link href=\"/onbording\">Onbording</Link>\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1742302714112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n       //   alignItems: \"center\",\n       // }}\n     >\n <Text className=\" text-primary\">Welcome</Text>\n-<Link href=\"/onbording\">Onbording</Link>\n+<Link className=\"text-white\" href=\"/onbording\">Onbording</Link>\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1742303305620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,7 +11,9 @@\n       // }}\n     >\n <Text className=\" text-primary\">Welcome</Text>\n <Link className=\"text-white\" href=\"/onbording\">Onbording</Link>\n+<Link className=\"text-white\" href=\"/movie/avengers\">Movie</Link>\n+\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1742303365291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,18 +2,9 @@\n import { Text, View } from \"react-native\";\n \n export default function Index() {\n   return (\n-    <View className=\"bg-black flex-1 justify-center items-center\"\n-      // style={{\n-      //   flex: 1,\n-      //   justifyContent: \"center\",\n-      //   alignItems: \"center\",\n-      // }}\n-    >\n-<Text className=\" text-primary\">Welcome</Text>\n-<Link className=\"text-white\" href=\"/onbording\">Onbording</Link>\n-<Link className=\"text-white\" href=\"/movie/avengers\">Movie</Link>\n+    <View className=\"bg-black flex-1 justify-center items-center\">\n \n     </View>\n   );\n }\n"
                 }
             ],
             "date": 1742294910753,

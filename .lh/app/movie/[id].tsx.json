@@ -1,0 +1,34 @@
+{
+    "sourceFile": "app/movie/[id].tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1742303217317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742303241924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import { StyleSheet, Text, View } from 'react-native'\n import React from 'react'\n+import { useSearchParams } from 'expo-router/build/hooks'\n \n const Details = () => {\n+ const id =useSearchParams()\n   return (\n     <View>\n       <Text>Details</Text>\n     </View>\n"
+                },
+                {
+                    "date": 1742303250561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react'\n import { useSearchParams } from 'expo-router/build/hooks'\n \n const Details = () => {\n- const id =useSearchParams()\n+ const {id} =useSearchParams()\n   return (\n     <View>\n       <Text>Details</Text>\n     </View>\n"
+                },
+                {
+                    "date": 1742303266470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import { StyleSheet, Text, View } from 'react-native'\n import React from 'react'\n-import { useSearchParams } from 'expo-router/build/hooks'\n+import { useLocalSearchParams, useSearchParams } from 'expo-router/build/hooks'\n \n const Details = () => {\n- const {id} =useSearchParams()\n+ const {id} =useLocalSearchParams()\n   return (\n     <View>\n       <Text>Details</Text>\n     </View>\n"
+                },
+                {
+                    "date": 1742303274770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n const Details = () => {\n  const {id} =useLocalSearchParams()\n   return (\n     <View>\n-      <Text>Details</Text>\n+      <Text>Details:{id}</Text>\n     </View>\n   )\n }\n \n"
+                }
+            ],
+            "date": 1742303217317,
+            "name": "Commit-0",
+            "content": "import { StyleSheet, Text, View } from 'react-native'\nimport React from 'react'\n\nconst Details = () => {\n  return (\n    <View>\n      <Text>Details</Text>\n    </View>\n  )\n}\n\nexport default Details\n\nconst styles = StyleSheet.create({})"
+        }
+    ]
+}
